@@ -1,0 +1,12 @@
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.csproj.AssemblyReference.cache
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.csproj.SuggestedBindingRedirects.cache
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.WelcomeScreen.resources
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.Properties.Resources.resources
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.csproj.GenerateResource.cache
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.csproj.CoreCompileInputs.cache
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\bin\Debug\ATM.exe.config
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\bin\Debug\ATM.exe
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\bin\Debug\ATM.pdb
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.exe
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.pdb
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.PinConfirmation.resources
