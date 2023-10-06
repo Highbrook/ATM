@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace ATM
 {
-    public partial class PinConfirmation : Form
+    public partial class PinConfirmationScreen : Form
     {
         private int DEV_CorrectPIN = 1234;
-        public PinConfirmation()
+        public PinConfirmationScreen()
         {
             InitializeComponent();
         }
@@ -26,7 +26,14 @@ namespace ATM
                 int iPINValue = Int32.Parse(sPINValue); 
                 if (iPINValue == DEV_CorrectPIN)
                 {
-                    MessageBox.Show("Correct PIN");
+                    IncorrectPinLabel.Visible = false;
+                    this.Visible = false;
+                    SelectionScreen selectionScreen = new SelectionScreen();
+                    selectionScreen.Show();
+                }
+                else
+                {
+                    IncorrectPinLabel.Visible = true;
                 }
             }
             catch (Exception)

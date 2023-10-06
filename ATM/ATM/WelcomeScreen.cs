@@ -26,7 +26,7 @@ namespace ATM
         private void InsertCardDevButton_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            PinConfirmation pinConfirmation = new PinConfirmation();
+            PinConfirmationScreen pinConfirmation = new PinConfirmationScreen();
             pinConfirmation.Show();
         }
     }

@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PinConfirmation.cs">
+    <Compile Include="CustomWithdrawScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PinConfirmation.Designer.cs">
-      <DependentUpon>PinConfirmation.cs</DependentUpon>
+    <Compile Include="CustomWithdrawScreen.Designer.cs">
+      <DependentUpon>CustomWithdrawScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsufficientFundsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsufficientFundsScreen.Designer.cs">
+      <DependentUpon>InsufficientFundsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PinConfirmationScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PinConfirmationScreen.Designer.cs">
+      <DependentUpon>PinConfirmationScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionScreen.Designer.cs">
+      <DependentUpon>SelectionScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="WelcomeScreen.cs">
       <SubType>Form</SubType>
@@ -60,8 +78,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="PinConfirmation.resx">
-      <DependentUpon>PinConfirmation.cs</DependentUpon>
+    <Compile Include="WithdrawFailedScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WithdrawFailedScreen.Designer.cs">
+      <DependentUpon>WithdrawFailedScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WithdrawScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WithdrawScreen.Designer.cs">
+      <DependentUpon>WithdrawScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WithdrawSuccessScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WithdrawSuccessScreen.Designer.cs">
+      <DependentUpon>WithdrawSuccessScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CustomWithdrawScreen.resx">
+      <DependentUpon>CustomWithdrawScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsufficientFundsScreen.resx">
+      <DependentUpon>InsufficientFundsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PinConfirmationScreen.resx">
+      <DependentUpon>PinConfirmationScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionScreen.resx">
+      <DependentUpon>SelectionScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WelcomeScreen.resx">
       <DependentUpon>WelcomeScreen.cs</DependentUpon>
@@ -75,6 +120,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="WithdrawFailedScreen.resx">
+      <DependentUpon>WithdrawFailedScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WithdrawScreen.resx">
+      <DependentUpon>WithdrawScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WithdrawSuccessScreen.resx">
+      <DependentUpon>WithdrawSuccessScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

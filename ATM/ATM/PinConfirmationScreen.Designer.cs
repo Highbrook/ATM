@@ -1,6 +1,6 @@
 ﻿namespace ATM
 {
-    partial class PinConfirmation
+    partial class PinConfirmationScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -219,7 +219,7 @@
             this.IncorrectPinLabel.AutoSize = true;
             this.IncorrectPinLabel.Font = new System.Drawing.Font("Microsoft Tai Le", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IncorrectPinLabel.ForeColor = System.Drawing.Color.OrangeRed;
-            this.IncorrectPinLabel.Location = new System.Drawing.Point(497, 434);
+            this.IncorrectPinLabel.Location = new System.Drawing.Point(497, 423);
             this.IncorrectPinLabel.Name = "IncorrectPinLabel";
             this.IncorrectPinLabel.Size = new System.Drawing.Size(251, 48);
             this.IncorrectPinLabel.TabIndex = 25;
@@ -238,7 +238,7 @@
             this.InsertCardDevButton.Name = "InsertCardDevButton";
             this.InsertCardDevButton.Size = new System.Drawing.Size(237, 65);
             this.InsertCardDevButton.TabIndex = 26;
-            this.InsertCardDevButton.Text = "Submit";
+            this.InsertCardDevButton.Text = "SUBMIT";
             this.InsertCardDevButton.UseVisualStyleBackColor = false;
             this.InsertCardDevButton.Click += new System.EventHandler(this.InsertCardDevButton_Click);
             // 
@@ -264,7 +264,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PinConfirmation";
             this.Text = "Pin Confirmation";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
