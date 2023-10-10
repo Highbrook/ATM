@@ -41,7 +41,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.backButton = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.SuccessfulTransactionLabel = new System.Windows.Forms.Label();
+            this.InsufficientFundsLabel = new System.Windows.Forms.Label();
+            this.IncorrectValue = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -196,23 +198,50 @@
             this.backButton.ForeColor = System.Drawing.Color.Cyan;
             this.backButton.Location = new System.Drawing.Point(358, 538);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(546, 129);
+            this.backButton.Size = new System.Drawing.Size(546, 84);
             this.backButton.TabIndex = 59;
             this.backButton.Text = "BACK";
             this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
-            // label2
+            // SuccessfulTransactionLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Chartreuse;
-            this.label2.Location = new System.Drawing.Point(376, 462);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(513, 48);
-            this.label2.TabIndex = 58;
-            this.label2.Text = "TRANSACTION SUCCESSFUL";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SuccessfulTransactionLabel.AutoSize = true;
+            this.SuccessfulTransactionLabel.Font = new System.Drawing.Font("Microsoft Tai Le", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SuccessfulTransactionLabel.ForeColor = System.Drawing.Color.Chartreuse;
+            this.SuccessfulTransactionLabel.Location = new System.Drawing.Point(376, 462);
+            this.SuccessfulTransactionLabel.Name = "SuccessfulTransactionLabel";
+            this.SuccessfulTransactionLabel.Size = new System.Drawing.Size(513, 48);
+            this.SuccessfulTransactionLabel.TabIndex = 58;
+            this.SuccessfulTransactionLabel.Text = "TRANSACTION SUCCESSFUL";
+            this.SuccessfulTransactionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SuccessfulTransactionLabel.Visible = false;
+            // 
+            // InsufficientFundsLabel
+            // 
+            this.InsufficientFundsLabel.AutoSize = true;
+            this.InsufficientFundsLabel.Font = new System.Drawing.Font("Microsoft Tai Le", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InsufficientFundsLabel.ForeColor = System.Drawing.Color.OrangeRed;
+            this.InsufficientFundsLabel.Location = new System.Drawing.Point(433, 463);
+            this.InsufficientFundsLabel.Name = "InsufficientFundsLabel";
+            this.InsufficientFundsLabel.Size = new System.Drawing.Size(398, 48);
+            this.InsufficientFundsLabel.TabIndex = 60;
+            this.InsufficientFundsLabel.Text = "INSUFFICIENT FUNDS";
+            this.InsufficientFundsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.InsufficientFundsLabel.Visible = false;
+            // 
+            // IncorrectValue
+            // 
+            this.IncorrectValue.AutoSize = true;
+            this.IncorrectValue.Font = new System.Drawing.Font("Microsoft Tai Le", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncorrectValue.ForeColor = System.Drawing.Color.OrangeRed;
+            this.IncorrectValue.Location = new System.Drawing.Point(452, 464);
+            this.IncorrectValue.Name = "IncorrectValue";
+            this.IncorrectValue.Size = new System.Drawing.Size(352, 48);
+            this.IncorrectValue.TabIndex = 61;
+            this.IncorrectValue.Text = "INCORRECT VALUE";
+            this.IncorrectValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.IncorrectValue.Visible = false;
             // 
             // WithdrawSuccessScreen
             // 
@@ -220,8 +249,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1264, 985);
+            this.Controls.Add(this.IncorrectValue);
+            this.Controls.Add(this.InsufficientFundsLabel);
             this.Controls.Add(this.backButton);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.SuccessfulTransactionLabel);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox11);
@@ -265,6 +296,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button backButton;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label SuccessfulTransactionLabel;
+        private System.Windows.Forms.Label InsufficientFundsLabel;
+        private System.Windows.Forms.Label IncorrectValue;
     }
 }

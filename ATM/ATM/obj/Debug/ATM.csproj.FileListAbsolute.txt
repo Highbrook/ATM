@@ -9,7 +9,6 @@ D:\UnityProjects\Git\ATM\ATM\ATM\ATM\bin\Debug\ATM.exe
 D:\UnityProjects\Git\ATM\ATM\ATM\ATM\bin\Debug\ATM.pdb
 D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.exe
 D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.pdb
-D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.PinConfirmation.resources
 C:\Users\Highbrook\Documents\GitHub\ATM\ATM\ATM\bin\Debug\ATM.exe.config
 C:\Users\Highbrook\Documents\GitHub\ATM\ATM\ATM\bin\Debug\ATM.exe
 C:\Users\Highbrook\Documents\GitHub\ATM\ATM\ATM\bin\Debug\ATM.pdb
@@ -28,3 +27,9 @@ C:\Users\Highbrook\Documents\GitHub\ATM\ATM\ATM\obj\Debug\ATM.PinConfirmationScr
 C:\Users\Highbrook\Documents\GitHub\ATM\ATM\ATM\obj\Debug\ATM.WithdrawFailedScreen.resources
 C:\Users\Highbrook\Documents\GitHub\ATM\ATM\ATM\obj\Debug\ATM.WithdrawSuccessScreen.resources
 C:\Users\Highbrook\Documents\GitHub\ATM\ATM\ATM\obj\Debug\ATM.CustomWithdrawScreen.resources
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.CustomWithdrawScreen.resources
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.PinConfirmationScreen.resources
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.SelectionScreen.resources
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.WithdrawFailedScreen.resources
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.WithdrawScreen.resources
+D:\UnityProjects\Git\ATM\ATM\ATM\ATM\obj\Debug\ATM.WithdrawSuccessScreen.resources

@@ -52,12 +52,6 @@
     <Compile Include="CustomWithdrawScreen.Designer.cs">
       <DependentUpon>CustomWithdrawScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="InsufficientFundsScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InsufficientFundsScreen.Designer.cs">
-      <DependentUpon>InsufficientFundsScreen.cs</DependentUpon>
-    </Compile>
     <Compile Include="PinConfirmationScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,9 +92,6 @@
     </Compile>
     <EmbeddedResource Include="CustomWithdrawScreen.resx">
       <DependentUpon>CustomWithdrawScreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InsufficientFundsScreen.resx">
-      <DependentUpon>InsufficientFundsScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PinConfirmationScreen.resx">
       <DependentUpon>PinConfirmationScreen.cs</DependentUpon>

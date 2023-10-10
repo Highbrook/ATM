@@ -17,6 +17,28 @@ namespace ATM
             InitializeComponent();
         }
 
+        public void LabelSelection(int success)
+        {
+            if (success == 0)
+            {
+                IncorrectValue.Visible = false;
+                InsufficientFundsLabel.Visible = false;
+                SuccessfulTransactionLabel.Visible = true;
+            }
+            else if (success == 1)
+            {
+                IncorrectValue.Visible = false;
+                InsufficientFundsLabel.Visible = true;
+                SuccessfulTransactionLabel.Visible = false;
+            }
+            else if (success == 2)
+            {
+                IncorrectValue.Visible = true;
+                InsufficientFundsLabel.Visible = false;
+                SuccessfulTransactionLabel.Visible = false;
+            }
+        }
+
         private void backButton_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;

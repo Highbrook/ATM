@@ -13,6 +13,9 @@ namespace ATM
 {
     public partial class CustomWithdrawScreen : Form
     {
+
+        
+
         public CustomWithdrawScreen()
         {
             InitializeComponent();
@@ -23,18 +26,27 @@ namespace ATM
             try
             {
                 int customWithdrwalValue = Int32.Parse(CustomWithdrawlValueTextLabel.Text);
-                WithdrawScreen withdrawScreen = new WithdrawScreen();
-                if (withdrawScreen.enoughFunds(customWithdrwalValue))
+                WithdrawScreen withdrawScreen = WithdrawScreen.GetInstance;
+                int responseValue = withdrawScreen.CustomEnoughFunds(customWithdrwalValue);
+                if (responseValue == 0)
                 {
                     withdrawScreen.payout();
+                    this.DialogResult = DialogResult.OK;
                 }
-                else if (!withdrawScreen.enoughFunds(customWithdrwalValue))
+                else if (responseValue == 1)
+                {
+                    withdrawScreen.IncorrectValueFormat();
+                    this.DialogResult = DialogResult.OK;
+                }
+                else if (responseValue == 2)
                 {
                     withdrawScreen.notEnoughFundsWindow();
+                    this.DialogResult = DialogResult.OK;
                 }
                 else
                 {
                     withdrawScreen.errorOccurred();
+                    this.DialogResult = DialogResult.OK;
                 }
             }
             catch (Exception)
