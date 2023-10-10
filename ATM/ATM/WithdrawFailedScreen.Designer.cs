@@ -234,7 +234,7 @@
             this.backButton.ForeColor = System.Drawing.Color.Cyan;
             this.backButton.Location = new System.Drawing.Point(358, 538);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(546, 129);
+            this.backButton.Size = new System.Drawing.Size(546, 84);
             this.backButton.TabIndex = 57;
             this.backButton.Text = "BACK";
             this.backButton.UseVisualStyleBackColor = false;

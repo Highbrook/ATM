@@ -51,67 +51,22 @@ namespace ATM
 
         private void oneKButton_Click(object sender, EventArgs e)
         {
-            if (EnoughFunds(Int32.Parse(oneKButton.Text)))
-            {
-                payout();
-            }
-            else if (!EnoughFunds(Int32.Parse(oneKButton.Text)))
-            {
-                notEnoughFundsWindow();
-            }
-            else
-            {
-                errorOccurred();
-            }
+            FundCheck_ButtonClick(Int32.Parse(oneKButton.Text));
         }
 
         private void twoKButton_Click(object sender, EventArgs e)
         {
-            if (EnoughFunds(Int32.Parse(twoKButton.Text)))
-            {
-                payout();
-            }
-            else if (!EnoughFunds(Int32.Parse(twoKButton.Text)))
-            {
-                notEnoughFundsWindow();
-            }
-            else
-            {
-                errorOccurred();
-            }
+            FundCheck_ButtonClick(Int32.Parse(twoKButton.Text));
         }
 
         private void threeKButton_Click(object sender, EventArgs e)
         {
-            if (EnoughFunds(Int32.Parse(threeKButton.Text)))
-            {
-                payout();
-            }
-            else if (!EnoughFunds(Int32.Parse(threeKButton.Text)))
-            {
-                notEnoughFundsWindow();
-            }
-            else
-            {
-                errorOccurred();
-            }
+            FundCheck_ButtonClick(Int32.Parse(threeKButton.Text));
         }
 
         private void fiveKButton_Click(object sender, EventArgs e)
         {
-            if (EnoughFunds(Int32.Parse(fiveKButton.Text)))
-            {
-                payout();
-            }
-            else if (!EnoughFunds(Int32.Parse(fiveKButton.Text)))
-            {
-                notEnoughFundsWindow();
-            }
-            else
-            {
-                errorOccurred();
-            }
-            
+            FundCheck_ButtonClick(Int32.Parse(fiveKButton.Text));
         }
 
         private void customButton_Click(object sender, EventArgs e)
@@ -124,6 +79,23 @@ namespace ATM
         #endregion
 
         #region Responses
+
+        private void FundCheck_ButtonClick(int fundCheck)
+        {
+            if (EnoughFunds(fundCheck))
+            {
+                payout();
+            }
+            else if (!EnoughFunds(fundCheck))
+            {
+                notEnoughFundsWindow();
+            }
+            else
+            {
+                errorOccurred();
+            }
+        }
+
         public void notEnoughFundsWindow()
         {
             this.Visible = false;
